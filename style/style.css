@@ -293,8 +293,8 @@ body {
     font-size: 1.4rem;
   }
 
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
+  .nine {
+    height: 300px;       /* Give it a set height so it doesn't take over the whole screen */
+    overflow-y: auto;    /* This enables the scrollbar automatically */
+    padding: 10px;       /* Adds a little breathing room for the text */
 }
