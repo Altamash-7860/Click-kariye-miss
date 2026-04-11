@@ -293,8 +293,20 @@ body {
     font-size: 1.4rem;
   }
 
-  .nine {
-    height: 300px;       /* Give it a set height so it doesn't take over the whole screen */
-    overflow-y: auto;    /* This enables the scrollbar automatically */
-    padding: 10px;       /* Adds a little breathing room for the text */
+.nine {
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto; /* Still allows scrolling */
+    
+    /* This hides the scrollbar bar in Chrome, Safari, and Edge */
+    -webkit-overflow-scrolling: touch;
+}
+
+.nine::-webkit-scrollbar {
+    display: none; /* The magic line that hides the bar */
+}
+
+.nine {
+    -ms-overflow-style: none;  /* Hides bar for IE/Edge */
+    scrollbar-width: none;     /* Hides bar for Firefox */
 }
