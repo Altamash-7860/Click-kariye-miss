@@ -1,7 +1,5 @@
 /* This targets the whole screen to hide those initial bars */
 html, body {
-    margin: 0;
-    padding: 0;
     overflow: hidden; /* This kills the side and bottom bars completely */
 }
 
